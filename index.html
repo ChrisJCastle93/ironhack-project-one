@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/logo.png">
+    <title>Lidl Checkout Rush</title>
+  </head>
+  <body>
+    <div class="game-intro">
+      <img src="./images/logo.png" alt="" class="logo-img" />
+      
+      <br />
+      <h1>CHECKOUT RUSH</h1>
+      <!-- <p id="game-rules">GAME RULES GO HERE</p> -->
+      <div class="slidecontainer">
+        <p id="bagspeed"><span style="float: left; color: white">SUPER SLOW</span><span style="float: right; color: white">CRAZY FAST</span></p>
+        <input type="range" min="0" max="200" value="30" class="slider" id="myRange">
+      </div>
+      <br>
+      <br>
+      <button id="start-button">START GAME</button>
+    </div>
+    <div id="game-board">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div id="game-timer">
+      <h1>Timer</h1>
+      <h1 id="timer">0</h1>
+    </div>
+    <div id="game-score">
+      <h1>Score</h1>
+      <h1 id="score">0</h1>
+      <p id="highscore">High score: 0</p>
+    </div>
+    <script type="text/javascript" src="./src/script.js"></script>
+  </body>
+</html>
+
