@@ -5,6 +5,7 @@ window.onload = () => {
   };
   function startGame() {
     document.getElementById("start-button").style.display = "none";
+    document.getElementById("game-rules").style.display = "none";
     document.getElementsByTagName("h1")[0].style.display = "none";
     document.getElementsByClassName("slidecontainer")[0].style.display = "none";
     document.getElementById("game-score").style.display = "block";
@@ -22,7 +23,7 @@ function createItems() {
 }
 
 function gameTime() {
-  let secondsLeft = 30;
+  let secondsLeft = 10;
   setInterval(function () {
     secondsLeft--;
     gameTimer.innerText = secondsLeft;
@@ -35,7 +36,7 @@ function gameTime() {
     }
     const body = document.getElementsByTagName("body")[0];
     body.innerHTML = `<br><br><br><h1><br><br><br><br>YOU SCORED ${playerPoints}<br><br><br><br>Your high score is ${highScore}</h1>`;
-  }, 30000);
+  }, 10000);
 }
 
 function update() {
