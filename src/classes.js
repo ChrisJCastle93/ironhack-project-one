@@ -5,7 +5,7 @@ class Scene {
     this.canvas.height = window.innerHeight;
     this.canvas.width = window.innerWidth;
     this.backgroundImage = new Image();
-    this.backgroundImage.src = "/images/scene.png";
+    this.backgroundImage.src = "../images/scene.png";
   }
   drawCheckout() {
     this.ctx.drawImage(
