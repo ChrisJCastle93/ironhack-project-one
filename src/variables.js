@@ -14,11 +14,11 @@ let highScore;
 const itemsArr = [];
 
 const itemImgArray = [
-    "./images/cherry.png",
-    "./images/banana.png",
-    "./images/cherry.png",
-    "./images/pear.png",
-    "./images/pineapple.png",
-    "./images/bakedbeans.png",
-    "./images/strawberry.png",
+    "./ironhack-project-one/images/cherry.png",
+    "./ironhack-project-one/images/banana.png",
+    "./ironhack-project-one/images/cherry.png",
+    "./ironhack-project-one/images/pear.png",
+    "./ironhack-project-one/images/pineapple.png",
+    "./ironhack-project-one/images/bakedbeans.png",
+    "./ironhack-project-one/images/strawberry.png",
   ];
