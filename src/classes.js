@@ -77,7 +77,7 @@ class Item {
     this.angle = Math.random() < 0.5 ? this.angleUp : this.angleDown;
   }
   draw() {
-    checkout.ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+    checkout.ctx.drawImage(this.image, this.x, this.y, this.width, this.height)
     if (this.x > sceneWidth * 0.317406) {
       this.x += this.throwSpeed;
       this.y += this.angle;
