@@ -2,14 +2,14 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
   font-size: 2rem;
   line-height: 1rem;
 }
 
 h1 {
   font-weight: 800;
-  color: white
+  color: white;
 }
 
 p {
@@ -26,7 +26,7 @@ body {
   padding: 0;
   margin: 0;
   text-align: center;
-  background-color: #004FAB;
+  background-color: #004fab;
   min-width: 800px;
 }
 
@@ -91,8 +91,8 @@ body button {
 
 #start-button {
   font-weight: 800;
-  color: #004FAB;
-  background-color: #FFF000;
+  color: #004fab;
+  background-color: #fff000;
   border: 5px solid red;
   border-radius: 20px;
 }
@@ -110,7 +110,7 @@ body button {
   appearance: none;
   width: 100%; /* Full-width */
   height: 25px; /* Specified height */
-  background: #FFF000; /* Grey background */
+  background: #fff000; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.9; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
@@ -129,8 +129,8 @@ body button {
   appearance: none;
   width: 40px; /* Set a specific slider handle width */
   height: 40px; /* Slider handle height */
-  border: 5px solid #E7020B; /* Green background */
-  background: #FFF000; /* Grey background */
+  border: 5px solid #e7020b; /* Green background */
+  background: #fff000; /* Grey background */
 
   cursor: pointer; /* Cursor on hover */
   border-radius: 50px;
@@ -139,10 +139,9 @@ body button {
 .slider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  border: 5px solid #E7020B; /* Green background */
-  background: #FFF000; /* Grey background */
+  border: 5px solid #e7020b; /* Green background */
+  background: #fff000; /* Grey background */
 
   cursor: pointer; /* Cursor on hover */
   border-radius: 50px;
-
 }
