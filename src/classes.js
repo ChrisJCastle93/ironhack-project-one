@@ -5,7 +5,7 @@ class Scene {
     this.canvas.height = window.innerHeight;
     this.canvas.width = window.innerWidth;
     this.backgroundImage = new Image();
-    this.backgroundImage.src = "images/scene.png";
+    this.backgroundImage.src = "assets/scene.png";
   }
   drawCheckout() {
     this.ctx.drawImage(
@@ -24,7 +24,7 @@ class Bag {
     this.y = 250 + sceneHeight * 0.2;
     this.speedY = 0;
     this.image = new Image();
-    this.image.src = "images/lidl-bag-rot.png";
+    this.image.src = "assets/lidl-bag-rot.png";
   }
   drawBag() {
     checkout.ctx.drawImage(this.image, this.x, this.y, bagSize, bagSize);
