@@ -6,6 +6,7 @@ window.onload = () => {
   function startGame() {
     document.getElementById("start-button").style.display = "none";
     document.getElementById("game-rules").style.display = "none";
+    document.getElementById("game-title").style.display = "none";
     document.getElementsByTagName("h1")[0].style.display = "none";
     document.getElementsByClassName("slidecontainer")[0].style.display = "none";
     document.getElementById("game-score").style.display = "block";
@@ -36,11 +37,12 @@ function gameTime() {
     }
     const body = document.getElementsByTagName("body")[0];
     body.innerHTML = `<br><br><br><h1><br><br><br><br>YOU SCORED ${playerPoints}<br><br><br><br>Your high score is ${highScore}</h1>`;
+    const audio = new Audio('../assets/gameover.mp3');
+    audio.play();
   }, 10000);
 }
 
 function update() {
-  console.log(itemsArr);
   checkout.drawCheckout();
   bag.drawBag();
   itemsArr.forEach((item) => {

@@ -21,4 +21,5 @@ const itemImgArray = [
     "assets/pineapple.png",
     "assets/bakedbeans.png",
     "assets/strawberry.png",
+    "assets/rottenfruit.png",
   ];

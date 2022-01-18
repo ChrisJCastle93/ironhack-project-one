@@ -66,7 +66,7 @@ class Item {
     this.id = Math.random() * 1000000;
     this.x = 0;
     this.y = 250 + sceneHeight * 0.4;
-    this.width = sceneWidth / 50;
+    this.width = sceneWidth / 30;
     this.height = this.width;
     this.speedX = 4;
     this.throwSpeed = Math.floor(Math.random() * maxSpeed);
@@ -92,9 +92,16 @@ class Item {
       itemsArr.splice(index, 1);
     }
     if (this.x > bagPositionX && this.y > bag.y && this.y < bag.y + bagSize) {
-      playerPoints++;
+      if(this.image.src.includes('rotten')) {
+        const audio = new Audio('../assets/losepoints.mp3');
+        audio.play();
+        playerPoints--
+      } else {
+        const audio = new Audio('../assets/points.mp3');
+        audio.play();
+        playerPoints++;
+      }
       document.getElementById("score").innerText = playerPoints;
-      // message.show();
       this.x = 100000000;
       this.y = 100000000;
     }
