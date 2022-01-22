@@ -37,7 +37,7 @@ function gameTime() {
     }
     const body = document.getElementsByTagName("body")[0];
     body.innerHTML = `<br><br><br><h1><br><br><br><br>YOU SCORED ${playerPoints}<br><br><br><br>Your high score is ${highScore}</h1>`;
-    const audio = new Audio('../assets/gameover.mp3');
+    const audio = new Audio('../src/assets/gameover.mp3');
     audio.play();
   }, 10000);
 }

@@ -14,12 +14,12 @@ let highScore;
 const itemsArr = [];
 
 const itemImgArray = [
-    "assets/cherry.png",
-    "assets/banana.png",
-    "assets/cherry.png",
-    "assets/pear.png",
-    "assets/pineapple.png",
-    "assets/bakedbeans.png",
-    "assets/strawberry.png",
-    "assets/rottenfruit.png",
+    "src/assets/cherry.png",
+    "src/assets/banana.png",
+    "src/assets/cherry.png",
+    "src/assets/pear.png",
+    "src/assets/pineapple.png",
+    "src/assets/bakedbeans.png",
+    "src/assets/strawberry.png",
+    "src/assets/rottenfruit.png",
   ];
